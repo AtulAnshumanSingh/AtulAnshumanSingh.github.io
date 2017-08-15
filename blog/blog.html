@@ -1,31 +1,29 @@
 <!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <style>
 @import 'https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i|Raleway:300,300i,600,600i';
 body {
-    background-color: #dcdee2;
+    background-image: url("BackgroundImage.png");
 	background-size: cover;
     border-radius: 0px;
 	overflow: hidden;
     text-rendering: optimizeLegibility;
 	
 }
-
 #backgorund {
-    background-color: white;
 	font-family: 'Raleway', sans-serif;
     border-radius: 0px;
 	overflow: hidden;
     text-rendering: optimizeLegibility;
-	box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.75);
-	margin-top:18px;
-	margin-left:18px;
-	width:1300px;
-	height:150px;
-	border-radius: 15px;
 }
 
 h2{
-	margin-left:24px;
+	margin-left:15px;
 	
 }
 
@@ -33,20 +31,45 @@ h2{
 	margin-left:24px;
 	margin-right:24px;
 }
+
+#block
+{
+	background-color:#e5e6e8;
+	font-family: 'Raleway', sans-serif;
+	background-size: cover;
+	margin-left:45px;
+    border-radius: 0px;
+	overflow: hidden;
+    text-rendering: optimizeLegibility;
+	box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75);
+	margin-top:18px;
+	width:1300px;
+	height:120px;
+	border-radius: 2px;
+}
+
+#blockcontent{
+	margin-left:15px;
+	font-size:17px;
+}
 </style>
 <html>
 	<head>
 		<title>Machine Learning Projects</title>
 	</head>
 	<body>
-	<div id="backgorund">
-	<h2>Machine Learning Projects</h2>
-	<p id="topcont" align="justify">I'm quite enthusiatic about how Machine Learning algorithms work and how they can be used to solve to real world problems. For this, in my personal opinion, the best way 
-	is to try and implement the algorithms from scratch by yourself. The implement might not be industry force, but it will nevertheless give deep insights into the working of ML algorithms. 
-	Frankly spreaking, it isn't very difficult implement these algorithms, given you have an enthusiastic mind.
-	</p> </div>
-	<ol>
-	<li><a href="/blog/SVD">Singular Value Decomposition</a></li>
-	</ol>
+	<div class="jumbotron">
+		<div  id="backgorund" class="container-fluid">
+		<h1 align="center">Machine Learning Projects</h1>
+		<p id="topcont" align="justify">I'm quite enthusiatic about how Machine Learning algorithms work and how they can be used to solve to real world problems. For this, in my personal opinion, the best way 
+		is to try and implement the algorithms from scratch by yourself. The implement might not be industry force, but it will nevertheless give deep insights into the working of ML algorithms. 
+		Frankly spreaking, it isn't very difficult implement these algorithms, given you have an enthusiastic mind.
+		</p> 
+		</div>
+	</div>
+	<div class="row">
+		<div id="block" class="container-fluid"><a href="/blog/SVD"><h2>Singular Value Decomposition and Its Application to Least Squares Analysis</h2></a>
+		<p id="blockcontent">SVD has been implemented here to using the algorithm put forward by <i>Golub and Kahan</i> (1965). It has been further utilized to solve the Least Squres problem.</p> </div>
+	</div>
 	</body>
 </html>
